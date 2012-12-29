@@ -4,6 +4,7 @@
 if has('gui_running')
     "colorscheme emacs
     colorscheme autumn
+    set guifont=Liberation\ Mono\ 8  
 else
     colorscheme autumn 
 endif
