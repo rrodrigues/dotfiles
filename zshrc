@@ -236,8 +236,16 @@ zle -N after-first-word
 bindkey "^[a" after-first-word # esc-a
 
 
-# test func
-
+# transform ... into ../../ | .... into ../../../ and so on
+rationalise-dot() {
+  if [[ $LBUFFER = *.. ]]; then
+    LBUFFER+=/..
+  else
+    LBUFFER+=.
+  fi
+}
+zle -N rationalise-dot
+bindkey . rationalise-dot
 
 
 
