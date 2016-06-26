@@ -28,3 +28,7 @@ alias la='ls -la'
 
 # alias pipe grep
 alias -g g='| grep '
+
+
+# current dir to clipboard
+alias pwd_clipboard='pwd | pbcopy'
