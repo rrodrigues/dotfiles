@@ -22,6 +22,7 @@ alias grep='grep --color=auto'
 ambiguous_alias ls 'ls --color=auto' 'ls -G'
 alias ll='ls -l'
 alias la='ls -la'
+alias py3='python3'
 
 # file open alias
 # alias -s py=gvim

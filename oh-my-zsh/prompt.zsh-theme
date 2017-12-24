@@ -1,5 +1,12 @@
 
-PROMPT=' %c $(git_prompt_info)%$(git_prompt_status) %#%{$reset_color%} '
+if [[ -z "$SSH_CLIENT" ]]; then
+  prompt_host=''
+else
+  prompt_host='%{$fg_bold[green]%}$USER@%m '
+fi
+
+PROMPT='${prompt_host}%{$fg[blue]%} %c $(git_prompt_info)%$(git_prompt_status) %#%{$reset_color%} '
+
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[green]%}"
