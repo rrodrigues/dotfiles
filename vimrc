@@ -1,7 +1,7 @@
 
 " vim shortcuts
 " Operators
-"  d - delete/cut 
+"  d - delete/cut
 "  c - change
 "  y - yank/copy
 "  v - visual select
@@ -18,9 +18,6 @@ let mapleader = ","
 
 
 " setter -> options ------------------------ {{{
-
-" colorscheme
-colorscheme zenburn
 
 " line number
 set number
@@ -55,7 +52,7 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
 " spell checking on
-"set spell	
+"set spell
 
 " show dots for whitespaces
 set listchars=tab:▸\ ,trail:·
@@ -153,10 +150,10 @@ onoremap il( :<c-u>normal! F)vi(<cr>
 
 
 " status line {{{
-set statusline=[%.20F]\ 
+set statusline=[%.20F]\
 set statusline+=FileType:\ %y
-set statusline+=%= 
-set statusline+=Line:\ %l\ [\%L]\ 
+set statusline+=%=
+set statusline+=Line:\ %l\ [\%L]\
 set statusline+=Column:\ %-2c
 set laststatus=2
 "}}}
@@ -205,10 +202,14 @@ Plugin 'ntpeters/vim-better-whitespace'
 " neocomplete
 Plugin 'Shougo/neocomplete.vim'
 
+Plugin 'jnurmine/Zenburn'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " }}}
 
+" colorscheme
+colorscheme zenburn
 
 " ctags configs --- using easytags ------- {{{
 set tags=tags,./tags;$HOME/.vim/tags/
