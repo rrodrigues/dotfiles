@@ -67,6 +67,7 @@ plugins=(
     common-aliases
     pip
     pod
+    calc
 )
 
 # User configuration
