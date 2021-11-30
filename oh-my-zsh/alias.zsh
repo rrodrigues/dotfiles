@@ -33,3 +33,9 @@ alias -g g='| grep '
 
 # current dir to clipboard
 alias pwd_clipboard='pwd | pbcopy'
+
+# mac intel arch
+if [[ $OSTYPE == darwin* && $CPUTYPE == arm64 ]]; then
+  alias izsh="arch -x86_64 zsh"
+fi
+

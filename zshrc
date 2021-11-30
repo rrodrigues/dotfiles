@@ -62,12 +62,14 @@ export ZSH_CUSTOM=~/.dotfiles/oh-my-zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    brew
     extract
     autojump
     common-aliases
     pip
     pod
-    calc
+    docker docker-compose
+    cargo
 )
 
 # User configuration

@@ -7,6 +7,9 @@ fi
 
 PROMPT='${prompt_host}%{$fg[blue]%} %c $(git_prompt_info)%$(git_prompt_status) %#%{$reset_color%} '
 
+if [[ $OSTYPE == darwin* && $CPUTYPE == x86_64 ]]; then
+  PROMPT="%{$fg_bold[red]%}$(arch)%{$reset_color%}$PROMPT"
+fi
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[green]%}"
